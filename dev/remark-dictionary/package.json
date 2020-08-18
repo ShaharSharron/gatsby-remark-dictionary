@@ -1,0 +1,20 @@
+{
+  "name": "remark-dictionary",
+  "version": "1.0.0",
+  "description": "Ut augue dui, iaculis sodales dictum commodo, varius sit amet leo. Donec varius semper nibh, eu sollicitudin dui venenatis molestie. Cras tincidunt, risus nec vulputate malesuada, orci lorem efficitur arcu, vitae consequat augue orci eu nisi. Duis tincidunt interdum arcu. Quisque scelerisque est nec nibh placerat auctor ut eu risus. Pellentesque vulputate tincidunt enim, nec commodo lorem facilisis ac. Etiam vitae vehicula lacus. Quisque vulputate libero orci, vel tempus risus viverra at. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer malesuada commodo malesuada. Vivamus fringilla nibh sit amet odio cursus auctor. Ut non egestas velit, nec luctus nisi. Fusce molestie gravida mi, ac efficitur leo efficitur vel. Curabitur lacus metus, accumsan a dapibus vitae, convallis sed dui. Fusce malesuada lobortis erat sed tristique. Integer viverra odio lorem, non tincidunt purus accumsan quis.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --trace-warnings server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mdast-util-to-string": "^1.1.0",
+    "remark": "^12.0.1",
+    "remark-html": "^12.0.0",
+    "remark-mdx": "^1.6.16",
+    "to-vfile": "^6.1.0",
+    "unist-util-visit-parents": "^3.1.0"
+  }
+}
