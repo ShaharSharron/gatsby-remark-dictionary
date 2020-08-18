@@ -1,11 +1,10 @@
-// const visit = require("unist-util-visit");
-const visit = require("unist-util-visit-parents");
+const visit = require("unist-util-visit");
 const toString = require("mdast-util-to-string")
 const dictionary = require('./markdown-dictionary');
 
 module.exports = () => (tree, file) => {
   const trie = getTrie(dictionary);
-  visit(tree, "paragraph", (node, ancestors) => {
+  visit(tree, "paragraph", (node) => {
     addDictionaryDefinitions(node, trie);
   });
 

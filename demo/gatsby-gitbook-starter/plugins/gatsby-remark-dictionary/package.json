@@ -1,8 +1,8 @@
 {
     "name": "gatsby-remark-dictionary",
     "private": true,
-    "description": "Documentation, built with mdx",
-    "author": "Praveen <praveen@hasura.io> (@praveenweb)",
+    "description": "",
+    "author": "Shahar Sharron",
     "version": "0.0.1",
     "dependencies": {
 
