@@ -1,0 +1,24 @@
+{
+  "name": "gatsby-remark-dictionary",
+  "version": "1.0.0",
+  "description": "Create a dictionary of word and phrases to be converted to highlighted values and links. define once and all phrases will be converted during build time.",
+  "main": "index.js",
+  "scripts": {
+    "test": "cd ./test && yarn && yarn add gatsby-remark-dictionary && yarn build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShaharSharron/gatsby-remark-dictionary.git"
+  },
+  "keywords": [
+    "gatsby-transform-remark",
+    "remark",
+    "gatsby"
+  ],
+  "author": "Shahar Sharron",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ShaharSharron/gatsby-remark-dictionary/issues"
+  },
+  "homepage": "https://github.com/ShaharSharron/gatsby-remark-dictionary#readme"
+}
