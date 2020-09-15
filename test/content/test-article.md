@@ -11,12 +11,7 @@ an example of text with alphabet inc inside
 ## Test h2
 facebook
 
-### Heading H3 
-The Biggest search Engine: Google LLC
-
-## Lists
-- Item 1 google llc
-- Item 2 facebook
-- Item 3 alphabet inc.
-- Item 4 example
-- Item 5 biggest search engine company
+### Heading H3
+What people think about google:
+- they own biggest search engine company
+- they know everything
