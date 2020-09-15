@@ -19,14 +19,15 @@ const plugins = [
       path: `${__dirname}/content/`
     }
   },
-  'gatsby-remark-dictionary',
+  // 'gatsby-remark-dictionary',
   // `gatsby-remark-purple-headers`,
+  `gatsby-transformer-remark`,
   {
     resolve: 'gatsby-plugin-mdx',
     options: {
       gatsbyRemarkPlugins: [
         {
-          resolve: 'gatsby-remark-dictionary',
+          resolve: require.resolve('../index'),
           options: {
             dictionary: require('./markdown-dictionary.js')
           }
@@ -36,12 +37,6 @@ const plugins = [
           options: {
             target: "_self",
             rel: "nofollow"
-          }
-        },
-        {
-          resolve: require.resolve('./plugins/gatsby-remark-purple-headers'),
-          options: {
-            dictionary: require('./markdown-dictionary.js')
           }
         },
         {
@@ -67,12 +62,6 @@ const plugins = [
       head: true,
       // enable ip anonymization
       anonymize: false,
-    },
-  },
-  {
-    resolve: `gatsby-transformer-remark`,
-    options: {
-      plugins: [`gatsby-remark-purple-headers`],
     },
   },
 ];

@@ -33,7 +33,6 @@
     "gatsby-plugin-sharp": "^2.3.7",
     "gatsby-plugin-sitemap": "^2.2.24",
     "gatsby-remark-copy-linked-files": "^2.1.33",
-    "gatsby-remark-dictionary": "^1.0.0",
     "gatsby-remark-external-links": "^0.0.4",
     "gatsby-remark-images": "^3.1.37",
     "gatsby-source-filesystem": "^2.1.42",
@@ -42,6 +41,7 @@
     "is-absolute-url": "^3.0.3",
     "lodash.flatten": "^4.4.0",
     "lodash.startcase": "^4.4.0",
+    "mdast-util-to-string": "^1.1.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-feather": "^2.0.3",
@@ -52,7 +52,8 @@
     "react-live": "^2.2.2",
     "react-loadable": "^5.5.0",
     "styled-components": "^4.4.1",
-    "styled-icons": "^9.0.1"
+    "styled-icons": "^9.0.1",
+    "unist-util-visit": "^2.0.3"
   },
   "license": "MIT",
   "main": "n/a",

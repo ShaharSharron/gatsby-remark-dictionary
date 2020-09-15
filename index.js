@@ -16,7 +16,7 @@ const getTrie = (dictionary) => {
   dictionary.forEach(definition => {
       definition.matchers.forEach(matcher => {
           let trieMatcherNode = trie;
-          const matcherWords = matcher.split(' ');
+          const matcherWords = matcher.toLowerCase().split(' ');
           matcherWords.forEach(word => {
               trieMatcherNode[word] = trieMatcherNode[word] || {};
               trieMatcherNode = trieMatcherNode[word];
@@ -32,7 +32,7 @@ const getTrie = (dictionary) => {
 const addDictionaryDefinitions = (node, trie) => {
   // Grab the innerText of the paragraph node
   let originalText = text = toString(node);
-  const textSplittedToWords = text.split(' ');
+  const textSplittedToWords = text.toLowerCase().split(' ');
 
   let currPlaceInTrie = trie, streakTextIndex = null, currTextIndex = 0;
   for (let i = 0; i < textSplittedToWords.length; i++) {
