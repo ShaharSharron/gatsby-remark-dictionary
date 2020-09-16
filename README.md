@@ -13,7 +13,8 @@ npm install --save gatsby-remark-dictionary
 ## How to use
 
 ### Add to config file
-```javascript
+#### Using gatsby-transformer-remark
+```javascript 
 // Add to the plugins list in your gatsby-config.js
 plugins: [{
     resolve: `gatsby-transformer-remark`,
@@ -27,6 +28,22 @@ plugins: [{
         }],
     },
 }]
+```
+
+#### Using gatsby-plugin-mdx
+```javascript 
+// Add to the plugins list in your gatsby-config.js
+plugins: [{
+    resolve: 'gatsby-plugin-mdx',
+    options: {
+      gatsbyRemarkPlugins: [
+        {
+          resolve: 'gatsby-remark-dictionary',
+          options: {
+            dictionary: require('./markdown-dictionary.js')
+          }
+        }
+}   ]
 ```
 
 ### Add a definition to dictionary file
