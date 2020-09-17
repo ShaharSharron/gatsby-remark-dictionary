@@ -1,6 +1,6 @@
 {
   "name": "gatsby-remark-dictionary",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Create a dictionary of word and phrases to be converted to highlighted values and links. define once and all phrases will be converted during build time.",
   "main": "index.js",
   "scripts": {
