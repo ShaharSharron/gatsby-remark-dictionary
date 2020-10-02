@@ -5,7 +5,7 @@
 Create a dictionary of words and phrases to be processed into links and highlights automatically throughout all MD/MDX files.
 
 ### Is it safe?
-This plugin is used by a big tech company in the bay and passed all security reviews needed.
+This plugin is used by a big tech company in the bay and passed strict security reviews.
 
 ### If you're scanning every text on markdown files, will is slow my build?
 This plugin is built using trie and therefore performance are fast, and was used to build a KB with ~ 1000 pages without any significant slowdown.
