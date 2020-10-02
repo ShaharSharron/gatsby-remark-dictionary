@@ -1,13 +1,11 @@
 module.exports = [{
-    "matchers":["alphabet inc"],
-    "link": "https://en.wikipedia.org/wiki/Alphabet_Inc.",
-    "title": "is an American multinational conglomerate headquartered in Mountain View, California."
+    "matchers":["amazon"],
+    "title": "is an American multinational technology company based in Seattle, Washington, which focuses on e-commerce, cloud computing, digital streaming, and artificial intelligence"
 }, {
-    "matchers":["google llc", "biggest search engine company"],
+    "matchers":["google llc", "alphabet inc", "biggest search engine"],
     "link": "https://en.wikipedia.org/wiki/Google",
     "title": "is an American multinational technology company that specializes in Internet-related services and products"
 }, {
     "matchers":["facebook"],
     "link": "https://en.wikipedia.org/wiki/Facebook",
-    "title": "is an American online social media and social networking service based in Menlo Park, California."
 }];

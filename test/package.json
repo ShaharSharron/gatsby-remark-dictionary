@@ -33,6 +33,7 @@
     "gatsby-plugin-sharp": "^2.3.7",
     "gatsby-plugin-sitemap": "^2.2.24",
     "gatsby-remark-copy-linked-files": "^2.1.33",
+    "gatsby-remark-dictionary": "^1.0.3",
     "gatsby-remark-external-links": "^0.0.4",
     "gatsby-remark-images": "^3.1.37",
     "gatsby-source-filesystem": "^2.1.42",
@@ -61,7 +62,8 @@
     "start": "gatsby clean && gatsby develop",
     "build": "gatsby build --prefix-paths",
     "format": "prettier --write \"src/**/*.{js,jsx,css,json}\"",
-    "lint": "eslint --fix \"src/**/*.{js,jsx}\""
+    "lint": "eslint --fix \"src/**/*.{js,jsx}\"",
+    "test": "jasmine"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
@@ -72,6 +74,7 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.19.0",
     "gatsby-plugin-remove-trailing-slashes": "^2.1.17",
+    "jasmine": "^3.6.1",
     "prettier": "^1.19.1",
     "prism-react-renderer": "^1.0.2"
   }

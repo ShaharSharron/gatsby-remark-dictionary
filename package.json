@@ -4,7 +4,7 @@
   "description": "Create a dictionary of word and phrases to be converted to highlighted values and links. define once and all phrases will be converted during build time.",
   "main": "index.js",
   "scripts": {
-    "test": "cd ./test && yarn && yarn add gatsby-remark-dictionary && yarn build"
+    "test": "cd ./test && yarn && yarn add gatsby-remark-dictionary && yarn build && yarn test"
   },
   "repository": {
     "type": "git",

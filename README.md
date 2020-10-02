@@ -4,6 +4,12 @@
 ### Define once auto apply everywhere. 
 Create a dictionary of words and phrases to be processed into links and highlights automatically throughout all MD/MDX files.
 
+### Is it safe?
+This plugin is used by a big tech company in the bay and passed all security reviews needed.
+
+### If you're scanning every text on markdown files, will is slow my build?
+This plugin is built using trie and therefore performance are fast, and was used to build a KB with ~ 1000 pages without any significant slowdown.
+
 ## Install
 
 ```sh
@@ -54,17 +60,15 @@ plugins: [{
 // link - optional - if the phrase should be converted into a link - provide the URL for the link
 // title - optional - if the phrase should be converted into an highlighter, provide the text to be presented when hovered.
 module.exports = [{
-    "matchers":["alphabet inc"],
-    "link": "https://en.wikipedia.org/wiki/Alphabet_Inc.",
-    "title": "is an American multinational conglomerate headquartered in Mountain View, California."
+    "matchers":["amazon"],
+    "title": "is an American multinational technology company based in Seattle, Washington, which focuses on e-commerce, cloud computing, digital streaming, and artificial intelligence"
 }, {
-    "matchers":["google llc", "biggest search engine company"],
+    "matchers":["google llc", "alphabet inc", "biggest search engine"],
     "link": "https://en.wikipedia.org/wiki/Google",
     "title": "is an American multinational technology company that specializes in Internet-related services and products"
 }, {
     "matchers":["facebook"],
     "link": "https://en.wikipedia.org/wiki/Facebook",
-    "title": "is an American online social media and social networking service based in Menlo Park, California."
 }];
 ```
 
@@ -74,15 +78,16 @@ Say we have the following file, `example.md`:
 Example Article text. Lists out some headings. Easy to customize.
 
 # Example H1
-an example of text with alphabet inc inside
+AWS cloud is an amazon product
 
 ## Test h2
-facebook
+during the pandemic people are using facebook products more than ever
 
 ### Heading H3
 What people think about google:
-- it's biggest search engine company
-- it knows everything
+- they are the biggest search engine
+- their parent company is alphabet inc
+- they have the answer to every question
 
 ```
 
@@ -93,29 +98,38 @@ Now, building the website yields:
     <p>Example Article text. Lists out some headings. Easy to customize.</p>
     <h1>Example H1</h1>
     <p>
-        an example of text with 
-        <a href="https://en.wikipedia.org/wiki/Alphabet_Inc." target="_blank" rel="noopener noreferrer">
-            <abbr title="is an American multinational conglomerate headquartered in Mountain View, California.">alphabet inc</abbr>
-        </a>
-         inside
+        AWS cloud is an
+        <abbr title="is an American multinational technology company based in Seattle, Washington, which focuses on e-commerce, cloud computing, digital streaming, and artificial intelligence">
+            amazon
+        </abbr>
+         product
     </p>
     
     <h2>Test h2</h2>
     <p>
-        <a href="https://en.wikipedia.org/wiki/Facebook" target="_blank" rel="noopener noreferrer">
-            <abbr title="is an American online social media and social networking service based in Menlo Park, California.">facebook</abbr>
-        </a>
+        during the pandemic people are using
+        <a href="https://en.wikipedia.org/wiki/Facebook" target="_blank" rel="noopener noreferrer">facebook</a> 
+        products more than ever
     </p>
     
     <h3>Heading H3</h3>
     <p>What people think about google:</p>
     <ul>
-        <li>they own  
+        <li>
+            they are the
             <a href="https://en.wikipedia.org/wiki/Google" target="_blank" rel="noopener noreferrer">
-                <abbr title="is an American multinational technology company that specializes in Internet-related services and products">biggest search engine company</abbr>
+                <abbr title="is an American multinational technology company that specializes in Internet-related services and products">
+                    biggest search engine
+                </abbr>
+            </a>    
+        </li>
+        <li>
+            their parent company is 
+            <a href="https://en.wikipedia.org/wiki/Google" target="_blank" rel="noopener noreferrer">
+                <abbr title="is an American multinational technology company that specializes in Internet-related services and products">alphabet inc</abbr>
             </a>
         </li>
-        <li>they know everything</li>
+        <li>they have the answer to every question</li>
     </ul>
 </div>
 ```

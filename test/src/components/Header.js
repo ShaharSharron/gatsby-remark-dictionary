@@ -56,7 +56,7 @@ const StyledBgDiv = styled('div')`
 const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
   <StaticQuery
     query={graphql`
-      query headerTitleQueryAndHeaderTitleQuery {
+      query headerTitleQueryAndHeaderTitleQueryAndHeaderTitleQueryAndHeaderTitleQuery {
         site {
           siteMetadata {
             headerTitle

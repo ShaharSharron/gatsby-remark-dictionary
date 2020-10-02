@@ -6,12 +6,13 @@ metaDescription: "This article integrated some tests for the gatsby-remark-dicti
 Example Article text. Lists out some headings. Easy to customize.
 
 # Example H1
-an example of text with alphabet inc inside
+AWS cloud is an amazon product
 
 ## Test h2
-facebook
+during the pandemic people are using facebook products more than ever
 
 ### Heading H3
 What people think about google:
-- they own biggest search engine company
-- they know everything
+- they are the biggest search engine
+- their parent company is alphabet inc
+- they have the answer to every question
